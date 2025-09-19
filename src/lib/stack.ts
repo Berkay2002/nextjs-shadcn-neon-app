@@ -6,9 +6,9 @@ import { useUser } from '@stackframe/stack';
 export function useUserSafe() {
   try {
     return useUser();
-  } catch (error) {
+  } catch {
     // During build time or when Stack isn't properly initialized
-    console.warn('Stack context not available:', error);
+    // Silently handle the error to avoid console spam during build
     return null;
   }
 }

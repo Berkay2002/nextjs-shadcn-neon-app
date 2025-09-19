@@ -1,6 +1,6 @@
 'use client';
 
-import Header from './Header';
+import ClientHeader from './ClientHeader';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ interface PageLayoutProps {
 export default function PageLayout({ children }: PageLayoutProps) {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <ClientHeader />
       {children}
     </div>
   );
