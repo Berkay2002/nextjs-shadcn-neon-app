@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 export default function ImageGenerator() {
   const [prompt, setPrompt] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
+  const [generatedImage] = useState<string | null>(null);
 
   const handleGenerate = async () => {
     setIsGenerating(true);

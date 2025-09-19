@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 export default function MusicGenerator() {
   const [prompt, setPrompt] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedAudio, setGeneratedAudio] = useState<string | null>(null);
+  const [generatedAudio] = useState<string | null>(null);
 
   const handleGenerate = async () => {
     setIsGenerating(true);

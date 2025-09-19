@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 export default function VideoGenerator() {
   const [prompt, setPrompt] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedVideo, setGeneratedVideo] = useState<string | null>(null);
+  const [generatedVideo] = useState<string | null>(null);
 
   const handleGenerate = async () => {
     setIsGenerating(true);

@@ -1,13 +1,10 @@
 // TODO: Install @google/genai package
 // npm install @google/genai
 
-import type { 
-  ImageGenerationRequest, 
+import type {
   ImageGenerationResponse,
-  VideoGenerationRequest,
-  VideoGenerationResponse 
+  VideoGenerationResponse
 } from '@/types/generation';
-import { AI_MODELS } from '@/lib/constants';
 
 // Placeholder for GoogleGenAI client
 // import { GoogleGenAI } from '@google/genai';
@@ -22,7 +19,7 @@ class GeminiClient {
     // });
   }
 
-  async generateImage(request: ImageGenerationRequest): Promise<ImageGenerationResponse> {
+  async generateImage(): Promise<ImageGenerationResponse> {
     try {
       // TODO: Implement Gemini image generation
       // const response = await this.client.models.generateContent({
@@ -55,7 +52,7 @@ class GeminiClient {
     }
   }
 
-  async generateVideo(request: VideoGenerationRequest): Promise<VideoGenerationResponse> {
+  async generateVideo(): Promise<VideoGenerationResponse> {
     try {
       // TODO: Implement Veo 3 video generation
       // const operation = await this.client.models.generateVideos({
@@ -99,7 +96,7 @@ class GeminiClient {
     }
   }
 
-  async uploadFile(file: File): Promise<{ success: boolean; fileUri?: string; error?: string }> {
+  async uploadFile(): Promise<{ success: boolean; fileUri?: string; error?: string }> {
     try {
       // TODO: Implement Files API upload
       // const uploadResult = await this.client.files.upload({

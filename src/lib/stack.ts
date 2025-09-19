@@ -1,9 +1,9 @@
 'use client';
 
-import { useUser, useStackApp } from '@stackframe/stack';
+import { useUser } from '@stackframe/stack';
 
 // Re-export Stack hooks for easier imports
-export { useUser, useStackApp } from '@stackframe/stack';
+export { useUser } from '@stackframe/stack';
 
 // Additional Stack utilities
 export type { User } from '@stackframe/stack';
