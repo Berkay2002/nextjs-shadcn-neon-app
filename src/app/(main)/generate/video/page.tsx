@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
+import PageLayout from '@/components/layout/PageLayout';
 import VideoGenerator from './_components/VideoGenerator';
-import Header from '@/components/layout/Header';
 
 // Force dynamic rendering for this page
 export const dynamic = 'force-dynamic';
@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 
 export default function VideoGenerationPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <PageLayout>
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -28,6 +27,6 @@ export default function VideoGenerationPage() {
           <VideoGenerator />
         </div>
       </main>
-    </div>
+    </PageLayout>
   );
 }

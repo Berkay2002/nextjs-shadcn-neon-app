@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
+import PageLayout from '@/components/layout/PageLayout';
 import ImageGenerator from './_components/ImageGenerator';
-import Header from '@/components/layout/Header';
 import ProtectedRoute from '@/components/common/ProtectedRoute';
 
 // Force dynamic rendering for this page
@@ -13,8 +13,7 @@ export const metadata: Metadata = {
 
 export default function ImageGenerationPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <PageLayout>
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -31,6 +30,6 @@ export default function ImageGenerationPage() {
           </ProtectedRoute>
         </div>
       </main>
-    </div>
+    </PageLayout>
   );
 }

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Header from '@/components/layout/Header';
+import PageLayout from '@/components/layout/PageLayout';
 import GenerationStats from './_components/GenerationStats';
 import UsageChart from './_components/UsageChart';
 
@@ -33,8 +33,7 @@ export default function DashboardPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <PageLayout>
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
@@ -61,6 +60,6 @@ export default function DashboardPage() {
           </div>
         </div>
       </main>
-    </div>
+    </PageLayout>
   );
 }

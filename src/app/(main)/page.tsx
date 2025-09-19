@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import Header from '@/components/layout/Header';
+import PageLayout from '@/components/layout/PageLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <PageLayout>
       <main>
         {/* Hero Section */}
         <section className="py-20 px-4">
@@ -102,6 +101,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </PageLayout>
   );
 }
