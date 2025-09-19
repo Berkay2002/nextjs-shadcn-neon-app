@@ -3,6 +3,9 @@ import Header from '@/components/layout/Header';
 import GenerationStats from './_components/GenerationStats';
 import UsageChart from './_components/UsageChart';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Dashboard - AI Generation Hub',
   description: 'View your AI generation stats and usage',

@@ -2,10 +2,10 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { useUser } from '@/lib/stack';
+import { useUserSafe } from '@/lib/stack';
 
 export default function Header() {
-  const user = useUser();
+  const user = useUserSafe();
 
   return (
     <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

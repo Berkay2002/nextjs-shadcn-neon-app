@@ -1,6 +1,6 @@
 'use client';
 
-import { useUser } from '@/lib/stack';
+import { useUserSafe } from '@/lib/stack';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -16,7 +16,7 @@ export default function ProtectedRoute({
   requireAuth = true,
   fallbackMessage = "Please sign in to access this feature" 
 }: ProtectedRouteProps) {
-  const user = useUser();
+  const user = useUserSafe();
 
   // If authentication is not required, always render children
   if (!requireAuth) {

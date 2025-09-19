@@ -2,6 +2,9 @@ import { Metadata } from 'next';
 import VideoGenerator from './_components/VideoGenerator';
 import Header from '@/components/layout/Header';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Generate Videos - AI Generation Hub',
   description: 'Generate amazing videos with AI using Veo 3',

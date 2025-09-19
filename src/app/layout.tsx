@@ -36,7 +36,9 @@ export default function RootLayout({
             </StackTheme>
           </StackProvider>
         ) : (
-          children
+          <div className="stack-fallback">
+            {children}
+          </div>
         )}
       </body>
     </html>

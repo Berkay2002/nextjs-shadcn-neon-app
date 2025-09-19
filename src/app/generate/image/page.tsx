@@ -3,6 +3,9 @@ import ImageGenerator from './_components/ImageGenerator';
 import Header from '@/components/layout/Header';
 import ProtectedRoute from '@/components/common/ProtectedRoute';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Generate Images - AI Generation Hub',
   description: 'Generate stunning images with AI using Gemini 2.5 Flash',

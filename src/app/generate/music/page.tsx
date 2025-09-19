@@ -2,6 +2,9 @@ import { Metadata } from 'next';
 import MusicGenerator from './_components/MusicGenerator';
 import Header from '@/components/layout/Header';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Generate Music - AI Generation Hub',
   description: 'Generate beautiful music with AI using Lyria 2',
