@@ -23,13 +23,13 @@ export const GENERATION_LIMITS = {
   },
 } as const;
 
-// API Pricing (in USD)
+// API Pricing (in USD) - Updated December 2024
 export const PRICING = {
-  IMAGE_GENERATION: 0.039, // per image
-  VIDEO_GENERATION: 0.40,  // per second
-  MUSIC_GENERATION: 0.06,  // per 30 seconds
+  IMAGE_GENERATION: 0.039, // per image (1290 tokens = $0.039 for images up to 1024x1024px)
+  VIDEO_GENERATION: 0.40,  // per second (Veo 3 updated pricing, down from $0.75)
+  MUSIC_GENERATION: 0.06,  // per 30 seconds (Lyria 2 official pricing)
   GEMINI_INPUT: 0.10,      // per 1M tokens
-  GEMINI_OUTPUT: 0.40,     // per 1M tokens
+  GEMINI_OUTPUT: 30.00,    // per 1M tokens ($30 per 1M output tokens)
 } as const;
 
 // Application Routes

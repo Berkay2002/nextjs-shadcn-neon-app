@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 interface ImagePreviewProps {
   imageUrl: string | null;
   alt?: string;
@@ -23,10 +25,13 @@ export default function ImagePreview({
 
   return (
     <div className="relative group">
-      <img
+      <Image
         src={imageUrl}
         alt={alt}
+        width={1024}
+        height={1024}
         className="w-full rounded-lg shadow-md"
+        unoptimized
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center space-x-2">
         {onDownload && (

@@ -46,6 +46,10 @@ export interface ImageGenerationResponse {
   imageData?: string; // Base64 encoded
   error?: string;
   generationId?: string;
+  quotaInfo?: {
+    dailyRemaining: number;
+    monthlyRemaining: number;
+  };
 }
 
 // Video generation types
