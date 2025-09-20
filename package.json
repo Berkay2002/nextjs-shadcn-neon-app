@@ -52,6 +52,7 @@
     "drizzle-orm": "^0.44.5",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.23.16",
+    "geist": "^1.5.1",
     "google-auth-library": "^10.3.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.544.0",
