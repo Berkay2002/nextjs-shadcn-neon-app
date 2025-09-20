@@ -92,7 +92,7 @@ export default function Header() {
               <img 
                 src="/ai-hub-logo.png" 
                 alt="AI Hub Logo" 
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
               <span className="hidden text-xl font-bold sm:inline-block">
                 AI Generation Hub
@@ -160,7 +160,7 @@ export default function Header() {
                       <img 
                         src="/ai-hub-logo.png" 
                         alt="AI Hub Logo" 
-                        className="h-8 w-auto"
+                        className="h-10 w-auto"
                       />
                       <span className="text-xl font-bold">
                         AI Generation Hub

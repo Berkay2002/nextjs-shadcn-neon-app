@@ -75,7 +75,7 @@ export default function Home() {
           <img 
             src="/ai-hub-logo.png" 
             alt="AI Hub Logo" 
-            className="h-8 w-auto"
+            className="h-12 w-auto"
           />
         </a>
 
@@ -186,7 +186,7 @@ export default function Home() {
           <img 
             src="/ai-hub-logo.png" 
             alt="AI Hub Logo" 
-            className="h-6 w-auto"
+            className="h-10 w-auto"
           />
         </a>
 

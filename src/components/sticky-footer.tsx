@@ -119,7 +119,7 @@ export function StickyFooter() {
               <img 
                 src="/ai-hub-logo.png" 
                 alt="AI Hub Logo" 
-                className="h-32 sm:h-48 w-auto opacity-80"
+                className="h-48 sm:h-64 w-auto opacity-80"
                 style={{ filter: 'brightness(0.15) sepia(1) saturate(0) hue-rotate(0deg)' }}
               />
             </motion.div>
