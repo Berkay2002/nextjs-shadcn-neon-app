@@ -54,7 +54,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground"
             >
-              Generate high-quality images with Gemini 2.5 Flash, create captivating videos with Veo 3, and compose original music with Lyria 2. All powered by Google's latest AI models.
+              Generate high-quality images with Gemini 2.5 Flash Image Preview, create captivating videos with Veo 3, and compose original music with Lyria 2. All powered by Google&#39;s latest AI models.
             </motion.p>
 
             <motion.div

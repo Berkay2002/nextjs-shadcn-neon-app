@@ -17,8 +17,8 @@ export default function Features() {
   const { theme } = useTheme()
   const [isHovering, setIsHovering] = useState(false)
   const [isCliHovering, setIsCliHovering] = useState(false)
-  const [isFeature3Hovering, setIsFeature3Hovering] = useState(false)
-  const [isFeature4Hovering, setIsFeature4Hovering] = useState(false)
+  const [_isFeature3Hovering, _setIsFeature3Hovering] = useState(false)
+  const [_isFeature4Hovering, setIsFeature4Hovering] = useState(false)
   const [inputValue, setInputValue] = useState("")
 
   const [baseColor, setBaseColor] = useState<[number, number, number]>([0.906, 0.541, 0.325]) // #e78a53 in RGB normalized
@@ -88,7 +88,7 @@ export default function Features() {
                   <h3 className="text-2xl leading-none font-semibold tracking-tight">Image Generation</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Create stunning, high-quality images with Google's Gemini 2.5 Flash. From concept art to professional graphics, generate any image you can imagine.
+                      Create stunning, high-quality images with Google&#39;s Gemini 2.5 Flash Image Preview. From concept art to professional graphics, generate any image you can imagine.
                     </p>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ export default function Features() {
                   <h3 className="text-2xl leading-none font-semibold tracking-tight">Video Generation</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Produce captivating videos with Google's Veo 3 model. Create everything from short clips to complete video content with native audio support.
+                      Produce captivating videos with Google&#39;s Veo 3 model. Create everything from short clips to complete video content with native audio support.
                     </p>
                   </div>
                 </div>
@@ -316,8 +316,8 @@ export default function Features() {
               {/* Smart Components */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative col-span-12 flex flex-col overflow-hidden rounded-xl border-2 p-6 shadow-xl transition-all ease-in-out md:col-span-6 xl:col-span-6 xl:col-start-2"
-                onMouseEnter={() => setIsFeature3Hovering(true)}
-                onMouseLeave={() => setIsFeature3Hovering(false)}
+                onMouseEnter={() => _setIsFeature3Hovering(true)}
+                onMouseLeave={() => _setIsFeature3Hovering(false)}
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                 transition={{ duration: 0.5, delay: 1.0 }}
@@ -332,7 +332,7 @@ export default function Features() {
                   <h3 className="text-2xl leading-none font-semibold tracking-tight">Music Generation</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Compose original music with Google's Lyria 2 AI. Generate melodies, harmonies, and complete tracks across various genres and styles.
+                      Compose original music with Google&#39;s Lyria 2 AI. Generate melodies, harmonies, and complete tracks across various genres and styles.
                     </p>
                   </div>
                 </div>

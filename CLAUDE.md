@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an AI Generation Hub built with Next.js 15, featuring Google's latest AI models for multimodal content generation. The application enables users to generate images (Gemini 2.5 Flash), videos (Veo 3), and music (Lyria 2) through an intuitive interface built with shadcn/ui components, Tailwind CSS, and Neon PostgreSQL with authentication via Neon Auth (Stack framework). The project follows modern React patterns with server components and implements comprehensive AI generation workflows with proper cost tracking and user management.
+This is an AI Generation Hub built with Next.js 15, featuring Google's latest AI models for multimodal content generation. The application enables users to generate images (Gemini 2.5 Flash Image Preview), videos (Veo 3), and music (Lyria 2) through an intuitive interface built with shadcn/ui components, Tailwind CSS, and Neon PostgreSQL with authentication via Neon Auth (Stack framework). The project follows modern React patterns with server components and implements comprehensive AI generation workflows with proper cost tracking and user management.
 
 ## Technology Stack
 
@@ -69,7 +69,7 @@ This is an AI Generation Hub built with Next.js 15, featuring Google's latest AI
 - **Session Management**: Secure session handling with database persistence
 
 ### Generation Features
-- **Image Generation**: Gemini 2.5 Flash with pre-processing and optimization
+- **Image Generation**: Gemini 2.5 Flash Image Preview with pre-processing and optimization
 - **Video Generation**: Veo 3 with image-to-video support and aspect ratio handling
 - **Music Generation**: Lyria 2 with real-time streaming and parameter control
 - **Cross-Modal Workflows**: Image→Video generation pipelines

@@ -11,7 +11,7 @@ const features = [
   {
     icon: ImageIcon,
     title: 'AI Images',
-    description: 'Generate stunning photorealistic images, artwork, and graphics with Gemini 2.5 Flash',
+    description: 'Generate stunning photorealistic images, artwork, and graphics with Gemini 2.5 Flash Image Preview',
     href: '/generate/image',
     gradient: 'from-blue-500 to-cyan-500',
     stats: '10M+ images created'
@@ -91,7 +91,7 @@ export default function Home() {
                 {/* Description */}
                 <p className="mt-8 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:text-xl max-w-3xl mx-auto">
                   Transform your ideas into stunning visuals, engaging videos, and beautiful music using 
-                  Google&apos;s most advanced AI models: Gemini 2.5 Flash, Veo 3, and Lyria 2.
+                  Google&apos;s most advanced AI models: Gemini 2.5 Flash Image Preview, Veo 3, and Lyria 2.
                 </p>
                 
                 {/* CTA Buttons */}

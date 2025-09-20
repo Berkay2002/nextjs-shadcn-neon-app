@@ -110,15 +110,19 @@ export function StickyFooter() {
                 </li>
               </ul>
             </motion.div>
-            <motion.h2
-              className="absolute bottom-0 left-0 translate-y-1/3 sm:text-[192px] text-[80px] font-bold select-none"
-              style={{ color: "#121113" }}
+            <motion.div
+              className="absolute bottom-0 left-0 translate-y-1/3 select-none"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              AI Hub
-            </motion.h2>
+              <img 
+                src="/ai-hub-logo.png" 
+                alt="AI Hub Logo" 
+                className="h-32 sm:h-48 w-auto opacity-80"
+                style={{ filter: 'brightness(0.15) sepia(1) saturate(0) hue-rotate(0deg)' }}
+              />
+            </motion.div>
           </div>
         </motion.div>
       )}

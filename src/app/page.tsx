@@ -72,27 +72,11 @@ export default function Home() {
           }`}
           href="/"
         >
-          <div className="flex items-center gap-2">
-            <div className="bg-gradient-to-br from-primary to-primary/80 rounded-lg p-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-primary-foreground"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <span className="font-bold text-lg tracking-tight">AI Hub</span>
-          </div>
+          <img 
+            src="/ai-hub-logo.png" 
+            alt="AI Hub Logo" 
+            className="h-8 w-auto"
+          />
         </a>
 
         <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-muted-foreground transition duration-200 hover:text-foreground md:flex md:space-x-2">
@@ -199,27 +183,11 @@ export default function Home() {
           className="flex items-center justify-center gap-2"
           href="/"
         >
-          <div className="flex items-center gap-2">
-            <div className="bg-gradient-to-br from-primary to-primary/80 rounded-lg p-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-primary-foreground"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <span className="font-bold text-sm tracking-tight">AI Hub</span>
-          </div>
+          <img 
+            src="/ai-hub-logo.png" 
+            alt="AI Hub Logo" 
+            className="h-6 w-auto"
+          />
         </a>
 
         <button

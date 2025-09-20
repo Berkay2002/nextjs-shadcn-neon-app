@@ -58,10 +58,10 @@ const Earth: React.FC<EarthProps> = ({
       markers: [
         // longitude latitude
       ],
-      onRender: (state: Record<string, any>) => {
+      onRender: (state: Record<string, unknown>) => {
         // Called on every animation frame.
         // `state` will be an empty object, return updated params.\
-        state.phi = phi
+        (state as { phi: number }).phi = phi
         phi += 0.003
       },
     })

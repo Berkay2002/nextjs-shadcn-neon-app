@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'Generate Images - AI Generation Hub',
-  description: 'Generate stunning images with AI using Gemini 2.5 Flash',
+  description: 'Generate stunning images with AI using Gemini 2.5 Flash Image Preview',
 };
 
 export default function ImageGenerationPage() {
@@ -21,7 +21,7 @@ export default function ImageGenerationPage() {
               AI Image Generation
             </h1>
             <p className="text-xl text-muted-foreground">
-              Create stunning images with Gemini 2.5 Flash
+              Create stunning images with Gemini 2.5 Flash Image Preview
             </p>
           </div>
           

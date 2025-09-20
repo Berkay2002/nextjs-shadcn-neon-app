@@ -192,7 +192,7 @@ src/
 - **⌟ Database Schema**: Drizzle ORM ready for user/generation tracking
 
 #### API Route Structure
-- Image generation: `/api/generate/image` (Gemini 2.5 Flash)
+- Image generation: `/api/generate/image` (Gemini 2.5 Flash Image Preview)
 - Video generation: `/api/generate/video` (Veo 3)
 - Music generation: `/api/generate/music` (Lyria 2)
 - User management: `/api/user/{profile,usage}`
@@ -388,10 +388,7 @@ For AI features, focus testing on:
 5. **Cost Tracking**: Implement billing and usage alerts
 
 ### Platform Compatibility
-- **Vercel**: Recommended (Next.js optimized)
-- **Netlify**: Compatible with build configuration
-- **Railway/Render**: Works with Node.js deployment
-- **Self-hosted**: Docker configuration available
+- **Vercel**: Is being used. 
 
 ---
 

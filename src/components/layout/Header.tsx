@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, Zap } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Separator } from '@/components/ui/separator';
@@ -89,7 +89,11 @@ export default function Header() {
           {/* Left side - Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <Zap className="h-7 w-7 text-primary" />
+              <img 
+                src="/ai-hub-logo.png" 
+                alt="AI Hub Logo" 
+                className="h-8 w-auto"
+              />
               <span className="hidden text-xl font-bold sm:inline-block">
                 AI Generation Hub
               </span>
@@ -153,7 +157,11 @@ export default function Header() {
                       className="flex items-center space-x-3"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      <Zap className="h-7 w-7 text-primary" />
+                      <img 
+                        src="/ai-hub-logo.png" 
+                        alt="AI Hub Logo" 
+                        className="h-8 w-auto"
+                      />
                       <span className="text-xl font-bold">
                         AI Generation Hub
                       </span>

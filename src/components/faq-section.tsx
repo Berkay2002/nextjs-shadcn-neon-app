@@ -15,7 +15,7 @@ export function FAQSection() {
     {
       question: "What AI models are supported?",
       answer:
-        "Our platform supports Google's latest AI models: Gemini 2.5 Flash for high-quality image generation, Veo 3 for video creation with native audio, and Lyria 2 for original music composition. These cutting-edge models provide professional-grade results.",
+        "Our platform supports Google's latest AI models: Gemini 2.5 Flash Image Preview for high-quality image generation, Veo 3 for video creation with native audio, and Lyria 2 for original music composition. These cutting-edge models provide professional-grade results.",
     },
     {
       question: "How much does it cost to generate content?",
@@ -66,7 +66,7 @@ export function FAQSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Questions? We've got{" "}
+          Questions? We&apos;ve got{" "}
           <span className="bg-gradient-to-b from-foreground via-rose-200 to-primary bg-clip-text text-transparent">
             answers
           </span>

@@ -37,6 +37,7 @@ const ScrambleHover: React.FC<ScrambleHoverProps> = ({
 }) => {
   const [displayText, setDisplayText] = useState(text)
   const [isScrambling, setIsScrambling] = useState(false)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [revealedIndices, setRevealedIndices] = useState(new Set<number>())
 
   useEffect(() => {
