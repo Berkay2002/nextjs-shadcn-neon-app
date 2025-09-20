@@ -56,13 +56,13 @@ export default function Features() {
             geist.className,
           )}
         >
-          Features
+          AI Generation Capabilities
         </h2>
         <FollowerPointerCard
           title={
             <div className="flex items-center gap-2">
-              <span>✨</span>
-              <span>Interactive Features</span>
+              <span>🤖</span>
+              <span>AI-Powered Creation Tools</span>
             </div>
           }
         >
@@ -85,10 +85,10 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">CLI & Manual Support</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Image Generation</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Integrate your landing page directly in the product while using your favorite tools.
+                      Create stunning, high-quality images with Google's Gemini 2.5 Flash. From concept art to professional graphics, generate any image you can imagine.
                     </p>
                   </div>
                 </div>
@@ -273,11 +273,10 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Globally Usable</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Video Generation</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Blocks are available everywhere but ours are the best. Use them in your favorite framework or even
-                      in plain HTML.
+                      Produce captivating videos with Google's Veo 3 model. Create everything from short clips to complete video content with native audio support.
                     </p>
                   </div>
                 </div>
@@ -330,10 +329,10 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Smart Components</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Music Generation</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Intelligent components that adapt to your needs with built-in animations and interactions.
+                      Compose original music with Google's Lyria 2 AI. Generate melodies, harmonies, and complete tracks across various genres and styles.
                     </p>
                   </div>
                 </div>
@@ -426,10 +425,10 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Dynamic Layouts</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Integrated Dashboard</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Responsive layouts that transform and adapt seamlessly across all device sizes.
+                      Monitor your usage, track costs, and manage all your AI-generated content from one unified dashboard with real-time analytics.
                     </p>
                   </div>
                 </div>

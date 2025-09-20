@@ -4,7 +4,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-This is a fully-functional AI Generation Hub built with Next.js 15, featuring Google's latest AI models for multimodal content generation. The application enables users to generate images (Gemini 2.5 Flash), videos (Veo 3), and music (Lyria 2) through an intuitive interface built with shadcn/ui components, Tailwind CSS, and Neon PostgreSQL with authentication via Neon Auth (Stack framework). The project follows modern React patterns with server components and implements comprehensive AI generation workflows with proper authentication, cost tracking, and user management.
+This is a fully-functional AI Generation Hub built with Next.js 15, featuring a modern landing page with embedded navigation, Google's latest AI models for multimodal content generation, and comprehensive UI components. The application now includes a complete landing page with responsive design, smooth scrolling navigation, mobile hamburger menu, and dark theme. It's designed to enable users to generate images (Gemini 2.5 Flash), videos (Veo 3), and music (Lyria 2) through an intuitive interface built with shadcn/ui components, Tailwind CSS v4, and Neon PostgreSQL with authentication via Neon Auth (Stack framework). The project follows modern React patterns with server components and implements comprehensive AI generation workflows with proper authentication, cost tracking, and user management.
 
 ## Technology Stack
 
@@ -14,7 +14,7 @@ This is a fully-functional AI Generation Hub built with Next.js 15, featuring Go
 - **React 19** - Latest React features and server components
 
 ### AI Integration
-- **Google Gemini 2.5 Flash** - Image generation (Nano Banana)
+- **Google Gemini 2.5 Flash Image Preview** - Image generation (Nano Banana)
 - **Google Veo 3** - Video generation with native audio
 - **Google Lyria 2** - Music generation with real-time streaming
 - **Gemini Files API** - Large media handling and processing
@@ -26,9 +26,47 @@ This is a fully-functional AI Generation Hub built with Next.js 15, featuring Go
 
 ### UI & Styling
 - **shadcn/ui** - Component library with "new-york" style variant
-- **Tailwind CSS** - Utility-first styling with CSS variables
+- **Tailwind CSS v4** - Latest utility-first styling with CSS variables and modern features
+- **Geist Font** - Modern font family (Sans & Mono) from Vercel
+- **Framer Motion** - Advanced animations and transitions
 - **Radix UI** - Accessible component primitives
 - **Lucide React** - Icon library
+- **MagicUI** - Additional UI components (Marquee, Globe, etc.)
+- **COBE** - 3D globe component
+- **tw-animate-css** - Extended animations for Tailwind
+
+## Landing Page Features
+
+The application now includes a complete, professional landing page with:
+
+### Navigation & Layout
+- **Embedded Navigation**: Sticky header with smooth scrolling navigation
+- **Mobile Responsive**: Hamburger menu with overlay for mobile devices
+- **Dynamic Header**: Responsive header that adapts on scroll
+- **Dark Theme**: Professional dark theme with pearl mist background effect
+
+### Page Sections
+- **Hero Section**: Animated hero with call-to-action and visual elements
+- **Features Section**: Showcase of key application features
+- **Pricing Section**: Tiered pricing plans with feature comparisons
+- **Testimonials**: Customer testimonials with marquee animations
+- **FAQ Section**: Collapsible accordion with common questions
+- **Release Promo**: New release announcement with shiny text animation
+- **Sticky Footer**: Bottom navigation with additional links
+
+### Animations & Interactions
+- **Smooth Scrolling**: Native smooth scrolling between sections
+- **Marquee Effects**: Animated testimonials and feature highlights
+- **Hover Effects**: Interactive buttons and cards
+- **Mobile Transitions**: Smooth mobile menu open/close animations
+- **Custom Animations**: Shiny text, following pointer, and scramble effects
+
+### Technical Implementation
+- **Tailwind CSS v4**: Latest utility framework with CSS variables
+- **Geist Fonts**: Modern typography from Vercel
+- **Framer Motion**: Advanced animations and transitions
+- **Custom CSS**: Keyframe animations for marquee and text effects
+- **Responsive Design**: Mobile-first approach with breakpoints
 
 ## Essential Commands
 
@@ -98,28 +136,39 @@ src/
 │   │   └── page.tsx
 │   ├── api/generate/              # AI generation API routes
 │   ├── handler/[...stack]/        # Neon Auth routes
-│   ├── layout.tsx                 # Root layout with Stack providers
-│   └── page.tsx                   # Landing page with features
+│   ├── layout.tsx                 # Root layout with Geist fonts
+│   ├── globals.css                # Tailwind CSS v4 configuration with animations
+│   └── page.tsx                   # Landing page with embedded navbar and sections
 ├── components/
-│   ├── ui/                        # shadcn/ui components
+│   ├── ui/                        # shadcn/ui components (50+ components)
 │   ├── layout/                    # Header, navigation components
 │   ├── common/                    # ProtectedRoute, shared utilities
-│   ├── providers/                 # Context providers
+│   ├── providers/                 # Context providers (theme-provider)
+│   ├── home/                      # Landing page specific components (hero)
+│   ├── magicui/                   # Extended UI components (marquee, globe)
 │   ├── forms/                     # Form components
-│   └── media/                     # Media display components
+│   ├── media/                     # Media display components
+│   ├── faq-section.tsx            # FAQ accordion component
+│   ├── features.tsx               # Feature showcase section
+│   ├── pricing-section.tsx        # Pricing plans component
+│   ├── testimonials.tsx           # Customer testimonials with marquee
+│   ├── new-release-promo.tsx      # Release announcement banner
+│   └── sticky-footer.tsx          # Bottom navigation footer
 ├── lib/
 │   ├── ai/                        # Gemini client and AI utilities
 │   ├── db/                        # Database configuration and schema
 │   ├── validations/               # Input validation utilities
 │   ├── constants.ts               # AI models, pricing, limits
+│   ├── fonts.ts                   # Geist font exports
 │   ├── stack.ts                   # Neon Auth utilities
 │   └── utils.ts                   # General utilities
 ├── types/
 │   ├── generation.ts              # AI generation type definitions
 │   └── index.ts                   # General type definitions
-├── hooks/                         # Custom React hooks
+├── hooks/
+│   └── use-mobile.ts              # Mobile detection hook
 ├── store/                         # State management
-└── styles/                        # Additional CSS files
+└── stack.tsx                      # Stack Auth configuration
 ```
 
 ### shadcn/ui Configuration
@@ -133,11 +182,14 @@ src/
 
 #### Current Implementation Status
 - **✅ Project Structure**: Complete feature-based organization
+- **✅ Landing Page**: Complete responsive landing page with embedded navigation
+- **✅ UI Framework**: Tailwind CSS v4 with advanced animations and Geist fonts
+- **✅ Component Library**: 50+ shadcn/ui components + custom landing page components
 - **✅ Authentication**: Neon Auth (Stack) fully configured
 - **✅ UI Components**: All generation interfaces built with shadcn/ui
 - **✅ Protected Routes**: Authentication required for generation features
-- **⏳ AI APIs**: Client placeholders created, ready for API key integration
-- **⏳ Database Schema**: Drizzle ORM ready for user/generation tracking
+- **⌟ AI APIs**: Client placeholders created, ready for API key integration
+- **⌟ Database Schema**: Drizzle ORM ready for user/generation tracking
 
 #### API Route Structure
 - Image generation: `/api/generate/image` (Gemini 2.5 Flash)
@@ -150,6 +202,8 @@ src/
 - **Video**: `VideoGenerator`, `VideoPreview`, `VideoPromptInput`
 - **Music**: `MusicGenerator`, `AudioPlayer`, `MusicPromptInput`
 - **Dashboard**: `GenerationStats`, `UsageChart`
+- **Landing Page**: `Hero`, `Features`, `PricingSection`, `TestimonialsSection`, `FAQSection`, `NewReleasePromo`, `StickyFooter`
+- **UI Extensions**: `Marquee`, `Globe`, `Scramble`, `FollowingPointer` (MagicUI components)
 
 #### File Handling Strategy
 - **Files API**: Automatic selection for payloads >20MB
@@ -230,11 +284,14 @@ NODE_ENV="development"
 - **Protected Routes**: Wrap sensitive content with `<ProtectedRoute>`
 
 ### Styling Patterns
-- Use Tailwind CSS utility classes for all styling
-- Avoid custom CSS unless impossible with Tailwind
-- Use responsive variants and Tailwind's variant system
-- Extract reusable layouts as UI components
-- Components should compose shadcn/ui primitives rather than modify them
+- **Tailwind CSS v4**: Uses modern `@import "tailwindcss"` syntax in globals.css
+- **CSS Variables**: Extensive use of CSS custom properties for theming
+- **Animations**: Custom keyframes defined in globals.css (marquee, shiny-text)
+- **Dark Theme**: Default dark theme with comprehensive color scheme
+- **Geist Fonts**: Modern typography using Geist Sans and Mono
+- **Responsive Design**: Mobile-first approach with embedded navigation
+- **Utility Classes**: Prefer Tailwind utilities over custom CSS
+- **Component Composition**: Build on shadcn/ui primitives rather than modifying them
 
 ### Database Development
 - Schema changes require running `npm run db:generate` then `npm run db:migrate`
@@ -265,16 +322,21 @@ For AI features, focus testing on:
 
 ### Current Build Status
 - **✅ Build Success**: Project compiles without errors
+- **✅ Landing Page**: Complete responsive landing page with animations
 - **✅ Type Safety**: Full TypeScript validation passes
-- **✅ Component Rendering**: All pages load correctly
+- **✅ Component Rendering**: All pages and components load correctly
 - **✅ Route Navigation**: All routes accessible and functional
+- **✅ Mobile Responsive**: Fully responsive with mobile hamburger menu
+- **✅ Dark Theme**: Comprehensive dark theme implementation
 - **⚠️ Warnings**: Minor ESLint warnings (unused placeholder variables)
 
 ### Key Testing Routes
-- **Home**: `/` - Landing page with feature overview
+- **Home**: `/` - Complete landing page with embedded navbar and smooth scrolling
+- **Sections**: Features, Pricing, Testimonials, FAQ sections with animations
 - **Generation**: `/generate/{image,video,music}` - AI generation interfaces
 - **Dashboard**: `/dashboard` - Analytics and usage tracking
 - **Auth**: `/handler/{sign-up,sign-in}` - Authentication flows
+- **Mobile**: All routes fully responsive with hamburger menu
 
 ## Performance & Cost Management
 
@@ -308,12 +370,15 @@ For AI features, focus testing on:
 ## Deployment Notes
 
 ### Production Readiness
+- **✅ Landing Page**: Professional landing page with animations and responsive design
 - **✅ Authentication**: Neon Auth configured and functional
 - **✅ Database**: Neon PostgreSQL with Drizzle ORM ready
-- **✅ UI**: Complete responsive interface with Tailwind CSS
+- **✅ UI Framework**: Complete interface with Tailwind CSS v4 and Geist fonts
+- **✅ Component Library**: 50+ shadcn/ui components + custom components
 - **✅ Type Safety**: Full TypeScript coverage
-- **⏳ AI APIs**: Ready for API key integration
-- **⏳ Database Schema**: User/generation tables need implementation
+- **✅ Mobile Ready**: Fully responsive with hamburger menu and touch interactions
+- **⌟ AI APIs**: Ready for API key integration
+- **⌟ Database Schema**: User/generation tables need implementation
 
 ### Deployment Checklist
 1. **Environment Variables**: Configure all required API keys
@@ -330,6 +395,6 @@ For AI features, focus testing on:
 
 ---
 
-*Last updated: 2025-09-19*
+*Last updated: 2025-09-20*
 
-**Current Status**: Project architecture complete, authentication functional, ready for AI API integration.
+**Current Status**: Complete landing page with responsive design, professional animations, Tailwind CSS v4, Geist fonts, and 50+ UI components. Authentication functional, ready for AI API integration.
